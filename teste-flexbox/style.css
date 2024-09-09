@@ -1,0 +1,49 @@
+.container{
+    background-color: lightblue;
+    height: 300px;
+    /* "display: flex;" permite você mexer dentro do container */
+    display: flex;
+
+    /* "row" deixa em linha, "row-reverse" deixa a linha ao contrario, e "column" deixa em coluna e "column-reverse" deixa a coluna reversa*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    margin: 10px;
+    font-size: 25px;
+
+    /* alinhando os numeros */
+    display: flex;
+    
+    /* 'center' deixa no meio, 'flex-end' alinha a direita, e flex-start deixa na direita */
+    justify-content: center;
+    
+    /* "align-items: flex-end;" serve para deixar alinhado na base */
+    align-items: center;
+}
+/* chamando o item com numero 2 */
+.item:nth-child(2){
+    flex-shrink: 3;
+    order: 1;
+}
+.item:nth-child(5){
+    flex-grow: 1;
+    order: 5;
+}
+.item:nth-child(3){
+    order: 2;
+    align-self: flex-end;
+}
+.item:nth-child(1){
+    order: 3;
+}
+.item:nth-child(4){
+    order: 4;
+}
+.item:nth-child(6){
+    order: 6;
+}
