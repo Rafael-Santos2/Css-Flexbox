@@ -1,0 +1,53 @@
+/* zerando as configurações */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: lightblue;
+}
+
+/* estilizando o paragrafo */
+.produtos p{
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+
+header{
+    text-align: center;
+    color: black;
+    padding: 30px;
+    background-color: lightyellow;
+}
+
+footer{
+    font-weight: bolder;
+    background-color: lightyellow;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.produtos{
+    background-color: #ffffff;
+    border: 1px solid black;
+    padding: 30px 30px 40px;
+    margin-bottom: 20%;
+    margin-top: 20%;
+}
+.produtos img{
+    cursor:pointer;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+main#album{
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+}
